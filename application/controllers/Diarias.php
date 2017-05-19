@@ -27,15 +27,15 @@ class Diarias extends CI_Controller {
 		$nome = $this->session->userdata('nome');
 		$dados = array(
 			'titulo' => "ATRIX | Área Administrativa | 1.17",
-			'nome' => $nome, 
-			'localtrabalho' => $this->session->userdata('peslocaltrabalho'), 
-			'posto' => $posto, 
+			'nome' => $nome,
+			'localtrabalho' => $this->session->userdata('peslocaltrabalho'),
+			'posto' => $posto,
 			'om' => $om
 			);
 		if ($this->session->userdata('logado') === TRUE) {
 
 				$this->load->view('diarias/cadastrar', $dados);
-				
+
 		}else{
 			$alerta = array(
 					"class" => "danger",
@@ -43,13 +43,13 @@ class Diarias extends CI_Controller {
 					);
 			redirect('conta/entrar', $alerta);
 		}
-		
+
 	}
 
 	public function cadastrar(){
 
 		if (isset($_POST['btn_bm'])) {
-			
+
 		$nome = $this->session->userdata('nome');
 		$saram_busca = $_POST['busca_saram'];
 
@@ -66,9 +66,9 @@ class Diarias extends CI_Controller {
 
 			$dados = array(
 			'titulo' => "ATRIX | Área Administrativa | 1.17",
-			'nome' => $nome, 
+			'nome' => $nome,
 			'localtrabalho' => $this->session->userdata('peslocaltrabalho'),
-			'posto_grad' => $posto, 
+			'posto_grad' => $posto,
 			'nome_completo' => $usuario['pesncompleto'],
 			'saram' => $usuario['pescodigo'],
 			'cpf' => $usuario['pescpf'],
@@ -76,13 +76,13 @@ class Diarias extends CI_Controller {
 			'data_nascimento' => $usuario['pesdn'],
 			'identidade' => $usuario['pesidentidade'],
 			'om' => $om,
-			'telefone' => $usuario['pesfone1'], 
+			'telefone' => $usuario['pesfone1'],
 			'om' => $om
 			);
 
 			$this->load->view('diarias/incluir', $dados);
 
-			
+
 		}
 
 
@@ -90,14 +90,14 @@ class Diarias extends CI_Controller {
 		/*
 		$posto = $this->diarias_model->get_posto_grad($this->session->userdata('posto_grad'));
 		$om = $this->diarias_model->get_om($this->session->userdata('om'));
-		
+
 
 		$insert = $this->diarias_model->insere_diaria($saram_busca);
 		$id = $this->db->insert_id();
 
 		$dados = array(
 			'titulo' => "ATRIX | Área Administrativa | 1.17",
-			'posto_grad' => $posto, 
+			'posto_grad' => $posto,
 			'nome_completo' => $this->session->userdata('nome_completo'),
 			'saram' => $this->session->userdata('saram'),
 			'cpf' => $this->session->userdata('cpf'),
@@ -105,7 +105,7 @@ class Diarias extends CI_Controller {
 			'data_nascimento' => $this->session->userdata('data_nascimento'),
 			'identidade' => $this->session->userdata('identidade'),
 			'om' => $om,
-			'telefone' => $this->session->userdata('telefone'), 
+			'telefone' => $this->session->userdata('telefone'),
 			'id' => $this->session->userdata('id'),
 			'om' => $om
 			);
@@ -125,7 +125,7 @@ class Diarias extends CI_Controller {
 			$insert = $this->diarias_model->insere_diaria($saram_busca);
 			$id = $this->db->insert_id();
 
-		
+
 
 
 				$dados = array(
@@ -133,12 +133,12 @@ class Diarias extends CI_Controller {
 					'posto_grad_nome' => $_POST['posto_grad_nome'],
 					'sc' => $_POST['sc'],
 					'id' => $this->session->userdata('id'),
-					'saram' => $_POST['saram'], 
+					'saram' => $_POST['saram'],
 					'cpf' => $_POST['cpf'],
 					'banco' => $_POST['banco'],
 					'agencia' => $_POST['agencia'],
 					'conta' => $_POST['conta'],
-					'email' => $_POST['email'], 
+					'email' => $_POST['email'],
 					'data_nascimento' => $_POST['data_nascimento'],
 					'amparo' => $_POST['amparo'],
 					'identidade' => $_POST['identidade'],
@@ -175,7 +175,7 @@ class Diarias extends CI_Controller {
 
 			}
 
-		
+
 	}
 
 	public function gera_os(){
@@ -191,4 +191,3 @@ class Diarias extends CI_Controller {
 
 
 }
-

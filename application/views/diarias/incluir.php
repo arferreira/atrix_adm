@@ -17,14 +17,14 @@
       ?>
 
       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        
-        <div class="panel panel-success"> 
-        <div class="panel-heading"> 
-        <h3 class="panel-title">Ordem de Serviço de Solicitação de Diárias</h3> 
-        </div> 
-        <div class="panel-body">  
+
+        <div class="panel panel-success">
+        <div class="panel-heading">
+        <h3 class="panel-title">Ordem de Serviço de Solicitação de Diárias</h3>
+        </div>
+        <div class="panel-body">
         <br />
-     
+
         <br /><br />
 
 
@@ -33,7 +33,7 @@
           <input type="submit" value="Gerar OS" name="gerar" class="btn btn-danger pull-right" />
           <div class="alert alert-warning" role="alert">
             <h5>I- DETERMINAÇÃO:</h5>
-            <span>Determino ao militar/servidor civil abaixo que realize o serviço especificado, fora da sede desta OM, nas condições seguintes: </span> 
+            <span>Determino ao militar/servidor civil abaixo que realize o serviço especificado, fora da sede desta OM, nas condições seguintes: </span>
           </div>
 
           <div class="form-group">
@@ -132,7 +132,7 @@
               UNIÃO&nbsp;&nbsp;&nbsp;
               <input type="radio" name="missao_proveito" id="optionsRadios1" value="p" >
               PRÓPRIA&nbsp;&nbsp;&nbsp;
-     
+
           </div>
           <br />
 
@@ -145,7 +145,7 @@
               DIÁRIA&nbsp;&nbsp;&nbsp;
               <input type="radio" name="custeio" id="optionsRadios1" value="c" >
               COMISSIONAMENTO&nbsp;&nbsp;&nbsp;
-          
+
           </div>
           <hr />
 
@@ -159,46 +159,46 @@
 
               <br />
                <label for="exampleInputName2">Afastamento de Sede:</label><br />
-               <td>Início: &nbsp;&nbsp;<input type="text" class="form-control" id="exampleInputName2" name="sv1datai" maxlength="10" onkeypress="mascaraData(this)" placeholder="Data" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora1" name="sv1horai" placeholder="Hora" style="width:80px;"></td> 
+               <td>Início: &nbsp;&nbsp;<input type="text" class="form-control" id="exampleInputName2" name="sv1datai" maxlength="10" onkeypress="mascaraData(this)" placeholder="Data" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora1" name="sv1horai" placeholder="Hora" style="width:80px;"></td>
           <td>Término: &nbsp;&nbsp;<input type="text" class="form-control" id="exampleInputName2" name="sv1dataf" maxlength="10" onkeypress="mascaraData(this)" placeholder="Data" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text"  class="form-control" id="hora2" name="sv1horaf"  placeholder="Hora" style="width:80px;" ></td>
-              
+
           </div>
           <hr />
 
           <!--
-          <table class="table table-bordered"> 
-          <thead> 
-          <tr> 
-          
-          <th>19 - Local de Realização de Serviço(Cidade):</th> 
+          <table class="table table-bordered">
+          <thead>
+          <tr>
+
+          <th>19 - Local de Realização de Serviço(Cidade):</th>
           <th>20 - Início<br />
           Data/Hora
-          </th> 
+          </th>
           <th>21 - Término<br />
           Data/Hora
-          </th> 
-          </tr> 
-          </thead> 
-          <tbody> 
-          <tr> 
-          
-          <td><input type="text" class="form-control" id="exampleInputName2" name="sv1" placeholder="Rio de Janeiro/RJ"  style="width:100%;" maxlength=""></td> 
-          <td><input type="text" class="form-control" id="exampleInputName2" name="sv1datai" maxlength="10" onkeypress="mascaraData(this)" placeholder="Data" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora1" name="sv1horai" placeholder="Hora" style="width:80px;"></td> 
-          <td><input type="text" class="form-control" id="exampleInputName2" name="sv1dataf" maxlength="10" onkeypress="mascaraData(this)" placeholder="Data" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text"  class="form-control" id="hora2" name="sv1horaf"  placeholder="Hora" style="width:80px;" ></td> 
-          </tr> 
-          <tr> 
-          
-          <td><input type="text" class="form-control" id="exampleInputName2" name="sv2" placeholder="Rio de Janeiro/RJ"  style="width:100%;" maxlength="20"></td> 
-          <td><input type="text" class="form-control" id="exampleInputName2" name="sv2datai" maxlength="10" onkeypress="mascaraData(this)" placeholder="Data" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora3" name="sv2horai" placeholder="Hora" style="width:80px;"></td> 
-          <td><input type="text" class="form-control" id="exampleInputName2" name="sv2dataf" placeholder="Data" maxlength="10" onkeypress="mascaraData(this)" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora4" name="sv2horaf" placeholder="Hora" style="width:80px;"></td> 
-          </tr> 
-          <tr> 
-          
-          <td><input type="text" class="form-control" id="exampleInputName2" name="sv3" placeholder="Rio de Janeiro/RJ"  style="width:100%;" maxlength="20"></td> 
-          <td><input type="text" class="form-control" id="exampleInputName2" name="sv3datai" placeholder="Data" maxlength="10" onkeypress="mascaraData(this)" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora5"  name="sv3horai" placeholder="Hora" style="width:80px;"></td> 
-          <td><input type="text" class="form-control" id="exampleInputName2" name="sv3dataf" placeholder="Data" maxlength="10" onkeypress="mascaraData(this)" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora6" name="sv3horaf" placeholder="Hora" style="width:80px;"></td> 
-          </tr> 
-          </tbody> 
+          </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+
+          <td><input type="text" class="form-control" id="exampleInputName2" name="sv1" placeholder="Rio de Janeiro/RJ"  style="width:100%;" maxlength=""></td>
+          <td><input type="text" class="form-control" id="exampleInputName2" name="sv1datai" maxlength="10" onkeypress="mascaraData(this)" placeholder="Data" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora1" name="sv1horai" placeholder="Hora" style="width:80px;"></td>
+          <td><input type="text" class="form-control" id="exampleInputName2" name="sv1dataf" maxlength="10" onkeypress="mascaraData(this)" placeholder="Data" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text"  class="form-control" id="hora2" name="sv1horaf"  placeholder="Hora" style="width:80px;" ></td>
+          </tr>
+          <tr>
+
+          <td><input type="text" class="form-control" id="exampleInputName2" name="sv2" placeholder="Rio de Janeiro/RJ"  style="width:100%;" maxlength="20"></td>
+          <td><input type="text" class="form-control" id="exampleInputName2" name="sv2datai" maxlength="10" onkeypress="mascaraData(this)" placeholder="Data" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora3" name="sv2horai" placeholder="Hora" style="width:80px;"></td>
+          <td><input type="text" class="form-control" id="exampleInputName2" name="sv2dataf" placeholder="Data" maxlength="10" onkeypress="mascaraData(this)" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora4" name="sv2horaf" placeholder="Hora" style="width:80px;"></td>
+          </tr>
+          <tr>
+
+          <td><input type="text" class="form-control" id="exampleInputName2" name="sv3" placeholder="Rio de Janeiro/RJ"  style="width:100%;" maxlength="20"></td>
+          <td><input type="text" class="form-control" id="exampleInputName2" name="sv3datai" placeholder="Data" maxlength="10" onkeypress="mascaraData(this)" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora5"  name="sv3horai" placeholder="Hora" style="width:80px;"></td>
+          <td><input type="text" class="form-control" id="exampleInputName2" name="sv3dataf" placeholder="Data" maxlength="10" onkeypress="mascaraData(this)" style="width:99px;">&nbsp;&nbsp;/&nbsp;&nbsp;<input type="text" class="form-control" id="hora6" name="sv3horaf" placeholder="Hora" style="width:80px;"></td>
+          </tr>
+          </tbody>
           </table>
           -->
           <hr />
@@ -225,13 +225,13 @@
             <br />
             <div class="form-group">
             <label for="exampleInputName2">23 - Valor Total:</label><span>(Diária + Adc. Deslocamento)</span><br />
-            
-          
+
+
             <br />
               <input type="radio" name="valor_total_radio" id="optionsRadios1" value="s" >
               Sem Custo&nbsp;&nbsp;&nbsp; <br /><br />
               R$<input type="text" name="valor_total_extenso" id="optionsRadios1" value="" >
-              
+
 
             </div>
             <hr />
@@ -253,7 +253,7 @@
               <input type="radio" name="aux_alimentacao" id="optionsRadios1" value="n" >
               NÃO&nbsp;&nbsp;&nbsp;
             <br />
-            
+
 
             </div>
 
@@ -262,21 +262,21 @@
             <br />
             <div class="form-group" style="width:100%;">
             <label for="exampleInputName2">Justificativa da Missão em final de semana/feriado, de acordo com o Art. 5º, § 2º do Decreto Nº 5.992:</label><br />
-            <input type="text" class="form-control" id="" name="just_missao" placeholder="26 - Justificativa da Missão em final de semana/feriado, de acordo com o Art. 5º, § 2º do Decreto Nº 5.992"  style="width:100%;">
+            <input type="text" class="form-control" id="" name="just_missao" placeholder="26 - Justificativa da Missão em final de semana/feriado, de acordo com o Art. 5º, § 2º do Decreto Nº 5.992" maxlength="140"  style="width:100%;">
             </div>
             <hr />
             <br />
             <br />
             <div class="form-group" style="width:100%;">
             <label for="exampleInputName2">Justificativa da Conveniência do Serviço(Inciso 2.1.3 da ICA 177-42):</label><br />
-            <input type="text" class="form-control" id="" name="just_conv" placeholder="27 - Justificativa da Conveniência do Serviço(Inciso 2.1.3 da ICA 177-42)"  style="width:100%;">
+            <input type="text" class="form-control" id="" name="just_conv" maxlength="140" placeholder="27 - Justificativa da Conveniência do Serviço(Inciso 2.1.3 da ICA 177-42)"  style="width:100%;">
             </div>
             <hr />
             <br />
             <br />
             <div class="form-group" style="width:100%;">
             <label for="exampleInputName2">Justificativa conforme o Art. 1º da Portaria 1348/GC4:</label><br />
-            <input type="text" class="form-control" id="" name="justificativa" placeholder="28 - Justificativa conforme o Art. 1º da Portaria 1348/GC4"  style="width:100%;">
+            <input type="text" class="form-control" id="" maxlength="140" name="justificativa" placeholder="28 - Justificativa conforme o Art. 1º da Portaria 1348/GC4"  style="width:100%;">
             </div>
 
             <hr />
@@ -286,7 +286,7 @@
             </div>
 
             <div class="row" style="padding:10px;">
-              
+
                <div class="col-md-1" style="width:100%; border:3px solid #ccc;">
                  <strong>
 
@@ -303,7 +303,7 @@
             </div>
 
             <div class="row" style="padding:10px;">
-              
+
                <div class="col-md-1" style="width:100%; border:3px solid #ccc;">
                <center>
                 <strong>
@@ -316,7 +316,7 @@
 
                  <table class="table">
     <caption>
-       
+
     </caption>
     <thead>
         <tr>
@@ -340,7 +340,7 @@
                <input type="text" />
             </th>
             <td>
-                Brasília, Manaus, Rio de Janeiro 
+                Brasília, Manaus, Rio de Janeiro
             </td>
             <td>
                 <input type="text" />
@@ -397,7 +397,7 @@
                </div>
 
                <div class="row" style="padding:10px;">
-              
+
                <div class="col-md-1" style="width:100%; border:3px solid #ccc;">
                <center>
                 <strong>
@@ -410,7 +410,7 @@
 
                  <table class="table">
     <caption>
-       
+
     </caption>
     <thead>
         <tr>
@@ -467,7 +467,7 @@
                __________________________________________________<br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ordenador de Despesas do GAP-CG
             </th>
-            
+
             <td>
                 Total
             </td>
@@ -475,7 +475,7 @@
                 <input type="text" />
             </td>
         </tr>
-        
+
     </tbody>
 </table>
                </div>
@@ -486,7 +486,7 @@
             </div>
 
             <div class="row" style="padding:10px;">
-              
+
                <div class="col-md-1" style="width:100%; border:3px solid #ccc; padding:15px;">
                <p>a) Homologo a concessão de diárias</p>
                <p>
@@ -496,10 +496,10 @@
                   Diária completa - Qtd: ( ) referente a pernoite(s) em ______________________<br />
                   N⁰ total de acréscimos: _____________________________________________<br />
                   3. Restituição a efetuar Sim( ) Não( ) Valor: R$ __________________________<br />
-               
+
                </p>
                <p>
-                 c) Publique-se: ____________________________________________________  
+                 c) Publique-se: ____________________________________________________
                </p>
 
                </div>
@@ -513,9 +513,9 @@
 
           </form>
 
-  
 
-         </div> 
+
+         </div>
         </div>
 
       </div>
@@ -523,7 +523,7 @@
       </div>
     </div>
 
- 
+
 
 <?php
 
